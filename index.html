@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--------------------TITLE-------------------->
+    <title>Muniz Arquitectura & Diseño</title>
+    <!--------------------FAV ICON-------------------->
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <!--------------------SEO-------------------->
+    <meta
+      name="description"
+      content="Somos un equipo de arquitectos orientado a la
+    excelencia de cada proyecto. ¡Contamos con los mejores profesionales del diseño y la construcción!"
+    />
+    <meta
+      name="keywords"
+      content="estudio, arquitecto, arquitectura, diseño, maquetas, renders, proyectos, planos, construccion, obra, portfolio, servicios"
+    />
+    <meta name="robots" content="index,follow" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+      referrerpolicy="no-referrer"
+    />
+    <!--------------------CSS-------------------->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./images/logo.svg"
+              alt="Logo - Muniz Arquitectura & Diseño"
+              class="header__logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <ul class="navbar-nav text-center navSites">
+              <li class="nav-item">
+                <a
+                  class="nav-link active navSites__link"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navSites__link" href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navSites__link" href="proyectos.html"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navSites__link" href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navSites__link" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--HERO-->
+      <section class="hero">
+        <video class="hero__video container-fluid" autoplay loop muted>
+          <source src="./videos/pexels-atif-dar-9643797.mp4" />
+          Su navegador no puede reproducir este video.
+        </video>
+        <div class="hero__content text-center typewriter">
+          <h1 class="mb-4 hero__content__title">
+            Proyecto, diseño y dirección de obra
+          </h1>
+          <a href="contacto.html"
+            ><button type="button" class="btn btn-dark hero__content__button">
+              Proyectá con nosotros
+            </button></a
+          >
+        </div>
+      </section>
+      <!--CONTENIDO-->
+      <section class="background">
+        <!--Carroussel Proyectos Destacados-->
+        <div class="container shadow homeContent homeContent--carousel">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex justify-content-center">
+                <img
+                  src="./images/proyectos/casa-cubismo.jpg"
+                  class="d-block fotoCarousel"
+                  alt="Foto de una casa con estilo cubismo"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="homeContent__title">Casa Cubismo</h2>
+                  <p>Lorem ipsum para el proyecto destacado 1</p>
+                </div>
+              </div>
+              <div class="carousel-item d-flex justify-content-center">
+                <img
+                  src="./images/proyectos/living-suecia.jpg"
+                  class="d-block fotoCarousel"
+                  alt="Foto de un living construido en Suecia"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="homeContent__title">Living en Suecia</h2>
+                  <p>Lorem ipsum para el proyecto destacado 2</p>
+                </div>
+              </div>
+              <div class="carousel-item d-flex justify-content-center">
+                <img
+                  src="./images/proyectos/habitacion-vidriada.jpg"
+                  class="d-block fotoCarousel"
+                  alt="Foto de una habitación matrimonial vidriada"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="homeContent__title">Habitación vidriada</h2>
+                  <p>Lorem ipsum para el proyecto destacado 3</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+        <!--Servicios-->
+        <div class="container shadow homeContent">
+          <div class="row justify-content-space-between align-items-center">
+            <div class="col-12 col-xl-6">
+              <h2 class="homeContent__title">Servicio 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                molestias pariatur fugiat? Quis possimus explicabo sunt
+                accusantium earum, corporis impedit soluta quos eos ab, illum
+                commodi atque magnam.
+              </p>
+            </div>
+            <div class="col-12 col-xl-6">
+              <img
+                src="./images/servicios/4445522B37326E4A37426C6D7A704A77586C49744D413D3D.jpg"
+                alt="Foto de un edificio"
+                class="rounded fotoIndex"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container shadow homeContent">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-xl-6">
+              <h2 class="homeContent__title">Servicio 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                dignissimos temporibus nam illo delectus! Libero ratione minus
+                fugiat accusantium voluptatum tempora veritatis repellat
+                pariatur adipisci aspernatur nisi neque cupiditate ipsam, quidem
+                officia. Eos culpa vitae temporibus ab ipsa optio nulla
+                voluptate dolores impedit dicta aspernatur officia ipsam
+                corporis aliquid iste deserunt, explicabo quam esse.
+              </p>
+            </div>
+            <div class="col-12 col-xl-6">
+              <img
+                src="./images/servicios/construccion.jpg"
+                alt="Foto de una obra en construcción"
+                class="rounded fotoIndex"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container shadow homeContent">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-xl-6">
+              <h2 class="homeContent__title">Servicio 3</h2>
+              <p>
+                LLorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perferendis eos dignissimos qui rem sed, laborum ducimus
+                quibusdam doloribus porro earum libero et exercitationem ipsa,
+                harum omnis aliquam deleniti repellendus eius accusamus,
+                sapiente debitis placeat. Sapiente, exercitationem facilis.
+              </p>
+            </div>
+            <div class="col-12 col-xl-6">
+              <img
+                src="./images/servicios/regalos_para_arquitecto.jpg"
+                alt="Foto de un plano hecho a mano"
+                class="rounded fotoIndex"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="bg-dark">
+      <div class="container text-end redSocial">
+        <a href="#">
+          <i class="fab fa-instagram redSocial redSocial--ig"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook redSocial redSocial--fb"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in redSocial redSocial--li"></i>
+        </a>
+      </div>
+      <div class="text-center py-1 autor">
+        <p class="autor__texto">Creado por: Tomás Alonso</p>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
