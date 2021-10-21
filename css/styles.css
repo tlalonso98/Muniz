@@ -11157,6 +11157,12 @@ h3, .h3 {
   color: #4b4b4b;
 }
 
+/* FONDOS */
+.fondoClaro {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 2rem 0;
+}
+
 /* HERO */
 .hero {
   display: grid;
@@ -11345,6 +11351,10 @@ h3, .h3 {
 }
 .tarjetas img {
   width: 75px;
+}
+
+.mapaGris {
+  filter: grayscale(100%);
 }
 
 /* HEADER */

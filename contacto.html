@@ -100,46 +100,52 @@
     </header>
     <!--CONTENIDO-->
     <main class="background">
-      <h1 class="pageTitle">Consultá o contanos tu proyecto</h1>
       <!--FORMULARIO-->
-      <section class="container formulario text-white text-center">
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control bg-dark text-white"
-            id="floatingInput"
-            placeholder="Nombre"
-          />
-          <label for="floatingInput">Nombre</label>
+      <section class="fondoClaro row text-center d-flex align-items-center">
+        <h1 class="col-12 col-xl-6 pageTitle align-middle">
+          Consultá o contanos tu proyecto
+        </h1>
+        <div class="container formulario text-white col-12 col-xl-6">
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              id="floatingInput"
+              placeholder="Nombre"
+            />
+            <label for="floatingInput">Nombre</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input
+              type="email"
+              class="form-control bg-dark text-white"
+              id="floatingInput"
+              placeholder="Correo electrónico"
+            />
+            <label for="floatingInput">Correo electrónico</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              id="floatingInput"
+              placeholder="Teléfono"
+            />
+            <label for="floatingInput">Teléfono</label>
+          </div>
+          <div class="form-floating mb-4">
+            <textarea
+              tipy="text"
+              class="form-control bg-dark text-white"
+              id="floatingInput"
+              placeholder="¿En qué podemos ayudarte?"
+            ></textarea>
+            <label for="floatingInput">¿En qué podemos ayudarte?</label>
+          </div>
+          <button type="submit" class="btn btn-dark px-5 shadow border-white">
+            Enviar
+          </button>
         </div>
-        <div class="form-floating mb-3">
-          <input
-            type="email"
-            class="form-control bg-dark text-white"
-            id="floatingInput"
-            placeholder="Correo electrónico"
-          />
-          <label for="floatingInput">Correo electrónico</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control bg-dark text-white"
-            id="floatingInput"
-            placeholder="Teléfono"
-          />
-          <label for="floatingInput">Teléfono</label>
-        </div>
-        <div class="form-floating mb-3">
-          <textarea
-            tipy="text"
-            class="form-control bg-dark text-white"
-            id="floatingInput"
-            placeholder="¿En qué podemos ayudarte?"
-          ></textarea>
-          <label for="floatingInput">¿En qué podemos ayudarte?</label>
-        </div>
-        <button type="submit" class="btn btn-dark px-5 shadow">Enviar</button>
       </section>
       <!--TARJETAS-->
       <section class="container-lg d-flex text-center my-4 tarjetas">
@@ -172,7 +178,7 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          class="py-4 w-75 rounded"
+          class="py-4 w-75 rounded mapaGris"
         >
           Este mapa no es compatible con su navegador.
         </iframe>
