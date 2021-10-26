@@ -43,7 +43,7 @@
   <body>
     <!--HEADER-->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark shadow fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark shadow-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img
@@ -119,163 +119,142 @@
         </div>
       </section>
       <!--CONTENIDO-->
-      <section class="background">
-        <!--Carroussel Proyectos Destacados-->
-        <div class="container shadow homeContent homeContent--carousel">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
+      <div class="background">
+        <!--SERVICIOS-->
+        <section>
+          <div class="container shadow homeContent">
+            <div class="row justify-content-space-between align-items-center">
+              <div class="col-12 col-xl-6">
+                <h2 class="homeContent__title">Servicio 1</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  molestias pariatur fugiat? Quis possimus explicabo sunt
+                  accusantium earum, corporis impedit soluta quos eos ab, illum
+                  commodi atque magnam.
+                </p>
+              </div>
+              <div class="col-12 col-xl-6">
+                <img
+                  src="./images/servicios/4445522B37326E4A37426C6D7A704A77586C49744D413D3D.jpg"
+                  alt="Foto de un edificio"
+                  class="rounded fotoIndex"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container shadow homeContent">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-xl-6">
+                <h2 class="homeContent__title">Servicio 2</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  dignissimos temporibus nam illo delectus! Libero ratione minus
+                  fugiat accusantium voluptatum tempora veritatis repellat
+                  pariatur adipisci aspernatur nisi neque cupiditate ipsam,
+                  quidem officia. Eos culpa vitae temporibus ab ipsa optio nulla
+                  voluptate dolores impedit dicta aspernatur officia ipsam
+                  corporis aliquid iste deserunt, explicabo quam esse.
+                </p>
+              </div>
+              <div class="col-12 col-xl-6">
+                <img
+                  src="./images/servicios/construccion.jpg"
+                  alt="Foto de una obra en construcción"
+                  class="rounded fotoIndex"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container shadow homeContent">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-xl-6">
+                <h2 class="homeContent__title">Servicio 3</h2>
+                <p>
+                  LLorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Perferendis eos dignissimos qui rem sed, laborum ducimus
+                  quibusdam doloribus porro earum libero et exercitationem ipsa,
+                  harum omnis aliquam deleniti repellendus eius accusamus,
+                  sapiente debitis placeat. Sapiente, exercitationem facilis.
+                </p>
+              </div>
+              <div class="col-12 col-xl-6">
+                <img
+                  src="./images/servicios/regalos_para_arquitecto.jpg"
+                  alt="Foto de un plano hecho a mano"
+                  class="rounded fotoIndex"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--FORMULARIO-->
+        <div class="fondoOscuro">
+          <section
+            class="
+              container
+              row
+              text-center
+              align-items-center
+              justify-content-center
+              py-4
+              m-auto
+            "
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active d-flex justify-content-center">
-                <img
-                  src="./images/proyectos/casa-cubismo.jpg"
-                  class="d-block fotoCarousel"
-                  alt="Foto de una casa con estilo cubismo"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="homeContent__title">Casa Cubismo</h2>
-                  <p>Lorem ipsum para el proyecto destacado 1</p>
-                </div>
-              </div>
-              <div class="carousel-item d-flex justify-content-center">
-                <img
-                  src="./images/proyectos/living-suecia.jpg"
-                  class="d-block fotoCarousel"
-                  alt="Foto de un living construido en Suecia"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="homeContent__title">Living en Suecia</h2>
-                  <p>Lorem ipsum para el proyecto destacado 2</p>
-                </div>
-              </div>
-              <div class="carousel-item d-flex justify-content-center">
-                <img
-                  src="./images/proyectos/habitacion-vidriada.jpg"
-                  class="d-block fotoCarousel"
-                  alt="Foto de una habitación matrimonial vidriada"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 class="homeContent__title">Habitación vidriada</h2>
-                  <p>Lorem ipsum para el proyecto destacado 3</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
-        </div>
-        <!--Servicios-->
-        <div class="container shadow homeContent">
-          <div class="row justify-content-space-between align-items-center">
-            <div class="col-12 col-xl-6">
-              <h2 class="homeContent__title">Servicio 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                molestias pariatur fugiat? Quis possimus explicabo sunt
-                accusantium earum, corporis impedit soluta quos eos ab, illum
-                commodi atque magnam.
-              </p>
-            </div>
-            <div class="col-12 col-xl-6">
+            <div class="align-middle col-12 col-xl-7">
+              <h2 class="pageTitle">Consultá o contanos tu proyecto</h2>
               <img
-                src="./images/servicios/4445522B37326E4A37426C6D7A704A77586C49744D413D3D.jpg"
-                alt="Foto de un edificio"
-                class="rounded fotoIndex"
+                src="/images/contactoimg.png"
+                alt="Ilustración de una construcción"
+                class="imgForm py-4 d-none d-xl-inline-block opacity-50"
               />
             </div>
-          </div>
+            <div class="formulario text-white col-10 col-xl-5">
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  id="floatingInput"
+                  placeholder="Nombre"
+                />
+                <label for="floatingInput">Nombre</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="email"
+                  class="form-control bg-dark text-white"
+                  id="floatingInput"
+                  placeholder="Correo electrónico"
+                />
+                <label for="floatingInput">Correo electrónico</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  id="floatingInput"
+                  placeholder="Teléfono"
+                />
+                <label for="floatingInput">Teléfono</label>
+              </div>
+              <div class="form-floating mb-4">
+                <textarea
+                  tipy="text"
+                  class="form-control bg-dark text-white"
+                  id="floatingInput"
+                  placeholder="¿En qué podemos ayudarte?"
+                ></textarea>
+                <label for="floatingInput">¿En qué podemos ayudarte?</label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-dark px-5 shadow border-white"
+              >
+                Enviar
+              </button>
+            </div>
+          </section>
         </div>
-        <div class="container shadow homeContent">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-xl-6">
-              <h2 class="homeContent__title">Servicio 2</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                dignissimos temporibus nam illo delectus! Libero ratione minus
-                fugiat accusantium voluptatum tempora veritatis repellat
-                pariatur adipisci aspernatur nisi neque cupiditate ipsam, quidem
-                officia. Eos culpa vitae temporibus ab ipsa optio nulla
-                voluptate dolores impedit dicta aspernatur officia ipsam
-                corporis aliquid iste deserunt, explicabo quam esse.
-              </p>
-            </div>
-            <div class="col-12 col-xl-6">
-              <img
-                src="./images/servicios/construccion.jpg"
-                alt="Foto de una obra en construcción"
-                class="rounded fotoIndex"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="container shadow homeContent">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-xl-6">
-              <h2 class="homeContent__title">Servicio 3</h2>
-              <p>
-                LLorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Perferendis eos dignissimos qui rem sed, laborum ducimus
-                quibusdam doloribus porro earum libero et exercitationem ipsa,
-                harum omnis aliquam deleniti repellendus eius accusamus,
-                sapiente debitis placeat. Sapiente, exercitationem facilis.
-              </p>
-            </div>
-            <div class="col-12 col-xl-6">
-              <img
-                src="./images/servicios/regalos_para_arquitecto.jpg"
-                alt="Foto de un plano hecho a mano"
-                class="rounded fotoIndex"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
     <!--FOOTER-->
     <footer class="bg-dark">
@@ -290,7 +269,7 @@
           <i class="fab fa-linkedin-in redSocial redSocial--li"></i>
         </a>
       </div>
-      <div class="text-center py-1 autor">
+      <div class="text-center py-2 autor">
         <p class="autor__texto">Creado por: Tomás Alonso</p>
       </div>
     </footer>

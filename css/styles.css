@@ -11114,6 +11114,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Globales */
 /* CSS GENERALES */
 * {
   margin: 0;
@@ -11157,10 +11158,154 @@ h3, .h3 {
   color: #4b4b4b;
 }
 
-/* FONDOS */
-.fondoClaro {
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 2rem 0;
+/* Pages */
+/* CONTENIDO */
+.homeContent {
+  margin: 4rem auto;
+  background-color: rgba(196, 196, 196, 0.5);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #353535;
+  padding: 2rem;
+}
+.homeContent__title {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.fotoCarousel {
+  max-width: 100%;
+}
+
+.fotoIndex {
+  max-width: 100%;
+}
+
+.servicios {
+  padding: 4rem;
+}
+.servicios__img {
+  height: 20rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+.carouselStyle {
+  border-radius: 10px;
+  border: solid #353535;
+  filter: grayscale(50%);
+}
+.carouselStyle:hover {
+  filter: grayscale(0);
+  transition: filter 0.6s ease-out;
+}
+
+.equipo img {
+  filter: grayscale(100%);
+}
+
+/* TARJETAS */
+.tarjetas {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tarjetas__card {
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  min-width: 350px;
+}
+.tarjetas__card:hover {
+  transform: scale(1.1);
+}
+.tarjetas img {
+  width: 75px;
+}
+
+/* MAPA */
+.mapaGris {
+  filter: grayscale(100%);
+}
+
+/* Componentes */
+/* HEADER */
+header {
+  height: 74px;
+}
+header nav {
+  background-image: url(../images/menubackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+header .header__logo {
+  height: 3rem;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.navSites {
+  font-family: "Raleway", sans-serif;
+}
+.navSites__link {
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem !important;
+}
+.navSites__link:hover {
+  color: #71a6a6 !important;
+  text-shadow: 3px 3px 5px black;
+}
+
+/* FOOTER */
+footer {
+  background-image: url(../images/footerbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 -4px 10px 0 black;
+  z-index: 10;
+}
+
+.redSocial {
+  color: #b6b6b6;
+}
+.redSocial i {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.redSocial--ig:hover {
+  color: #c13584;
+  text-shadow: 3px 3px 5px black;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.redSocial--fb:hover {
+  color: #3b5998;
+  text-shadow: 3px 3px 5px black;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.redSocial--li:hover {
+  color: #0e76a8;
+  text-shadow: 3px 3px 5px black;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.autor {
+  color: #ebf2f0;
+  justify-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.autor__texto {
+  margin: 0;
+  font-size: 0.8rem;
+  overflow: hidden;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* HERO */
@@ -11247,191 +11392,26 @@ h3, .h3 {
   }
 }
 
-/* CONTENIDO */
-.homeContent {
-  margin: 4rem auto;
-  background-color: rgba(196, 196, 196, 0.5);
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #353535;
-  padding: 2rem;
-}
-.homeContent__title {
-  font-size: 2rem;
-  font-family: "Raleway", sans-serif;
-}
-.homeContent--carousel {
-  padding: 0;
-}
-
-.fotoCarousel {
-  max-width: 100%;
-}
-
-.fotoIndex {
-  max-width: 100%;
-}
-
-.servicios {
-  padding: 4rem;
-}
-.servicios__img {
-  height: 20rem;
-  padding-bottom: 2rem;
-  align-items: center;
-}
-
-.proyecto div {
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  border: solid white 1px;
-}
-.proyecto div:hover {
-  filter: brightness(1.25);
-  transition: filter 0.5s ease-out;
-}
-
-.proyecto1 {
-  background-image: url(../images/proyectos/deptoenmexico.jpg);
-}
-
-.proyecto2 {
-  background-image: url(../images/proyectos/casadecampo.jpg);
-}
-
-.proyecto3 {
-  background-image: url(../images/proyectos/glasshouse.jpg);
-}
-
-.proyecto4 {
-  background-image: url(../images/proyectos/livingcomedor.jpg);
-}
-
-.proyecto5 {
-  background-image: url(../images/proyectos/oficinadenmark.jpg);
-}
-
-.proyecto6 {
-  background-image: url(../images/proyectos/provenzano.jpg);
-}
-
-.equipo img {
-  filter: grayscale(100%);
-}
-
-/* FORMULARIO */
 .formulario textarea, .formulario input {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.formulario {
-  max-width: 35rem;
-}
 .formulario textarea {
   height: 8rem !important;
 }
 
-/* TARJETAS */
-.tarjetas {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.tarjetas__card {
-  border: solid black 2px;
-  border-radius: 5px;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  min-width: 350px;
-}
-.tarjetas__card:hover {
-  transform: scale(1.1);
-}
-.tarjetas img {
-  width: 75px;
+.imgForm {
+  width: 50%;
 }
 
-.mapaGris {
-  filter: grayscale(100%);
+/* FORM de Index*/
+.fondoOscuro {
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* HEADER */
-header {
-  height: 74px;
-}
-header nav {
-  background-image: url(../images/menubackground.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-}
-header .header__logo {
-  height: 3rem;
-  filter: drop-shadow(0 0 5px white);
-}
-
-.navSites {
-  font-family: "Raleway", sans-serif;
-}
-.navSites__link {
-  letter-spacing: 1px;
-  padding: 0.5rem 1rem !important;
-}
-.navSites__link:hover {
-  color: #71a6a6 !important;
-  text-shadow: 3px 3px 5px black;
-}
-
-/* FOOTER */
-footer {
-  background-image: url(../images/footerbackground.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 -4px 10px 0 black;
-  z-index: 10;
-}
-
-.redSocial {
-  color: #b6b6b6;
-}
-.redSocial i {
-  padding: 1rem;
-  font-size: 1.25rem;
-}
-
-.redSocial--ig:hover {
-  color: #c13584;
-  text-shadow: 3px 3px 5px black;
-}
-
-/*Creamos el bucle para usar los valores del mapa*/
-.redSocial--fb:hover {
-  color: #3b5998;
-  text-shadow: 3px 3px 5px black;
-}
-
-/*Creamos el bucle para usar los valores del mapa*/
-.redSocial--li:hover {
-  color: #0e76a8;
-  text-shadow: 3px 3px 5px black;
-}
-
-/*Creamos el bucle para usar los valores del mapa*/
-.autor {
-  color: #ebf2f0;
-  justify-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.autor__texto {
-  margin: 0;
-  font-size: 0.7rem;
-  overflow: hidden;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px black;
+/* FORM de Contacto*/
+.fondoClaro {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=styles.css.map */

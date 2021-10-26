@@ -101,52 +101,69 @@
     <!--CONTENIDO-->
     <main class="background">
       <!--FORMULARIO-->
-      <section class="fondoClaro row text-center d-flex align-items-center">
-        <h1 class="col-12 col-xl-6 pageTitle align-middle">
-          Consultá o contanos tu proyecto
-        </h1>
-        <div class="container formulario text-white col-12 col-xl-6">
-          <div class="form-floating mb-4">
-            <input
-              type="text"
-              class="form-control bg-dark text-white"
-              id="floatingInput"
-              placeholder="Nombre"
+      <div class="fondoClaro">
+        <section
+          class="
+            container
+            row
+            text-center
+            align-items-center
+            justify-content-center
+            py-4
+            m-auto
+          "
+        >
+          <div class="align-middle col-12 col-xl-7">
+            <h1 class="pageTitle px-4">Consultá o contanos tu proyecto</h2>
+            <img
+              src="/images/contactoimg.png"
+              alt="Ilustración de una construcción"
+              class="imgForm py-4 d-none d-xl-inline-block opacity-75"
             />
-            <label for="floatingInput">Nombre</label>
           </div>
-          <div class="form-floating mb-4">
-            <input
-              type="email"
-              class="form-control bg-dark text-white"
-              id="floatingInput"
-              placeholder="Correo electrónico"
-            />
-            <label for="floatingInput">Correo electrónico</label>
+          <div class="formulario text-white col-10 col-xl-5">
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control bg-dark text-white"
+                id="floatingInput"
+                placeholder="Nombre"
+              />
+              <label for="floatingInput">Nombre</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="email"
+                class="form-control bg-dark text-white"
+                id="floatingInput"
+                placeholder="Correo electrónico"
+              />
+              <label for="floatingInput">Correo electrónico</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="text"
+                class="form-control bg-dark text-white"
+                id="floatingInput"
+                placeholder="Teléfono"
+              />
+              <label for="floatingInput">Teléfono</label>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea
+                tipy="text"
+                class="form-control bg-dark text-white"
+                id="floatingInput"
+                placeholder="¿En qué podemos ayudarte?"
+              ></textarea>
+              <label for="floatingInput">¿En qué podemos ayudarte?</label>
+            </div>
+            <button type="submit" class="btn btn-dark px-5 shadow border-white">
+              Enviar
+            </button>
           </div>
-          <div class="form-floating mb-4">
-            <input
-              type="text"
-              class="form-control bg-dark text-white"
-              id="floatingInput"
-              placeholder="Teléfono"
-            />
-            <label for="floatingInput">Teléfono</label>
-          </div>
-          <div class="form-floating mb-4">
-            <textarea
-              tipy="text"
-              class="form-control bg-dark text-white"
-              id="floatingInput"
-              placeholder="¿En qué podemos ayudarte?"
-            ></textarea>
-            <label for="floatingInput">¿En qué podemos ayudarte?</label>
-          </div>
-          <button type="submit" class="btn btn-dark px-5 shadow border-white">
-            Enviar
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
       <!--TARJETAS-->
       <section class="container-lg d-flex text-center my-4 tarjetas">
         <div class="tarjetas__card py-3">
