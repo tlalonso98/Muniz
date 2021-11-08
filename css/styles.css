@@ -11129,6 +11129,7 @@ a {
 }
 
 /* PALETA DE COLORES */
+/* FUENTES */
 /* FONDO */
 .background {
   background-position: center;
@@ -11231,29 +11232,25 @@ h3, .h3 {
 }
 
 /* Componentes */
-/* HEADER */
+header {
+  height: 74px;
+}
 header nav {
-  background-image: url(../images/menubackground.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #0f0f0f;
   text-transform: uppercase;
 }
-header .header__logo {
+header nav img {
   height: 3rem;
-  filter: drop-shadow(0 0 5px white);
+  filter: drop-shadow(0 0 5px #ebf2f0);
 }
 
-.navSites {
+.nav-link {
   font-family: "Raleway", sans-serif;
-}
-.navSites__link {
   letter-spacing: 1px;
   padding: 0.5rem 1rem !important;
 }
-.navSites__link:hover {
+.nav-link:hover {
   color: #998b4f !important;
-  text-shadow: 3px 3px 5px black;
 }
 
 /* FOOTER */
