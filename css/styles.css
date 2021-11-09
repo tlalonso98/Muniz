@@ -11250,7 +11250,7 @@ header nav img {
   padding: 0.5rem 1rem !important;
 }
 .nav-link:hover {
-  color: #998b4f !important;
+  color: #8d7f42 !important;
 }
 
 /* FOOTER */
@@ -11302,7 +11302,6 @@ footer {
   text-shadow: 1px 1px 1px black;
 }
 
-/* HERO */
 .hero {
   display: grid;
   justify-items: center;
@@ -11310,7 +11309,6 @@ footer {
   position: relative;
   line-height: 0;
   /* Sin el line height:0 la section excede el contenido del video */
-  /* ESTILO TYPEWRITING HERO */
 }
 .hero__video {
   padding: 0;
@@ -11327,35 +11325,33 @@ footer {
   font-size: 2.7rem;
   color: #ebf2f0;
   text-shadow: 2px 2px 2px black;
-  padding: 0.1rem;
   letter-spacing: 0.2rem;
 }
 .hero__content__button {
-  font-size: 1rem;
-  opacity: 90%;
-  padding: 0.5rem 1rem;
-  animation-name: efectoBoton;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 8s;
+  font-size: 1.2rem;
+  background-color: #8d7f42;
+  border: solid #0f0f0f;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
 }
-@keyframes efectoBoton {
-  0% {
-    color: #ebf2f0;
+.hero__content__button:hover {
+  color: #ebf2f0;
+  border-color: #ebf2f0;
+}
+
+/* MEDIA QUERIES DISPOSITIVOS PEQUEÑOS*/
+@media (max-width: 576px) {
+  .hero__content__title {
+    font-size: 2rem;
   }
-  50% {
-    color: transparent;
-  }
-  100% {
-    color: #ebf2f0;
+
+  .hero__content__button {
+    font-size: 1rem;
   }
 }
+/* ESTILO TYPEWRITING HERO */
 @media (min-width: 1024px) {
-  .hero {
-    /* The typing effect */
-    /* The typewriter cursor effect */
-  }
-  .hero .typewriter h1, .hero .typewriter .h1 {
+  .typewriter h1, .typewriter .h1 {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: 0.1em solid #ebf2f0;
@@ -11368,6 +11364,8 @@ footer {
     /* Adjust as needed */
     animation: typing 4s steps(36, end), blink-caret 0.8s step-end infinite;
   }
+
+  /* The typing effect */
   @keyframes typing {
     from {
       width: 0;
@@ -11376,6 +11374,7 @@ footer {
       width: 100%;
     }
   }
+  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to {
       border-color: transparent;
@@ -11385,7 +11384,6 @@ footer {
     }
   }
 }
-
 .formulario textarea, .formulario input {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
