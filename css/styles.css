@@ -11236,7 +11236,7 @@ header {
   height: 74px;
 }
 header nav {
-  background-color: #0f0f0f;
+  background-color: black;
   text-transform: uppercase;
 }
 header nav img {
@@ -11342,7 +11342,7 @@ footer {
 /* MEDIA QUERIES DISPOSITIVOS PEQUEÑOS*/
 @media (max-width: 576px) {
   .hero__content__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero__content__button {
