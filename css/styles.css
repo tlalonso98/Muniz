@@ -6,6 +6,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11115,7 +11117,7 @@ textarea.form-control-lg {
   }
 }
 /* Globales */
-/* CSS GENERALES */
+/* ---------- CSS GENERALES ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -11128,13 +11130,27 @@ a {
   text-decoration: none;
 }
 
-/* PALETA DE COLORES */
-/* FUENTES */
-/* FONDO */
+/* ---------- PALETA DE COLORES ---------- */
+/* ---------- FUENTES ---------- */
+/* ---------- FONDO ---------- */
 .background {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(25, 25, 25, 0.5), rgba(50, 50, 50, 0.35), rgba(100, 100, 100, 0.2), rgba(200, 200, 200, 0)), url(../images/generales/background.jpg);
+}
+
+/* ---------- BARRA DE SCROLL ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b4b4b;
+  border-radius: 20px;
 }
 
 /* H1 PARA TODO MENOS INDEX */
@@ -11191,6 +11207,166 @@ h3, .h3 {
   align-items: center;
 }
 
+/* IMÄGENES CON EFECTO  */
+.snip1563 {
+  background-color: rgba(141, 141, 141, 0.527);
+  color: #ffffff;
+  border-radius: 40px;
+  box-shadow: black 2px 2px 20px;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  margin: 10px 5px;
+  max-width: 630px;
+  min-width: 460px;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.snip1563 *,
+.snip1563 *:before,
+.snip1563 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1563:before,
+.snip1563:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-color: #ad9e5b;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563:before {
+  -webkit-transform: skew(30deg) translateX(80%);
+  transform: skew(30deg) translateX(80%);
+}
+
+.snip1563:after {
+  -webkit-transform: skew(-30deg) translateX(70%);
+  transform: skew(-30deg) translateX(70%);
+}
+
+.snip1563 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 20px 20px 20px 40%;
+}
+
+.snip1563 figcaption:before,
+.snip1563 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ad9e5b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: "";
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1563 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(100%);
+  transform: skew(30deg) translateX(100%);
+}
+
+.snip1563 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(90%);
+  transform: skew(-30deg) translateX(90%);
+}
+
+.snip1563 h3, .snip1563 .h3,
+.snip1563 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1563 h3, .snip1563 .h3 {
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip1563 p {
+  font-size: 0.9em;
+}
+
+.snip1563 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1563:hover h3, .snip1563:hover .h3,
+.snip1563.hover h3,
+.snip1563.hover .h3,
+.snip1563:hover p,
+.snip1563.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.snip1563:hover:before,
+.snip1563.hover:before {
+  -webkit-transform: skew(30deg) translateX(30%);
+  transform: skew(30deg) translateX(30%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1563:hover:after,
+.snip1563.hover:after {
+  -webkit-transform: skew(-30deg) translateX(20%);
+  transform: skew(-30deg) translateX(20%);
+}
+
+.snip1563:hover figcaption:before,
+.snip1563.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(50%);
+  transform: skew(30deg) translateX(50%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1563:hover figcaption:after,
+.snip1563.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(40%);
+  transform: skew(-30deg) translateX(40%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
 .carouselStyle {
   border-radius: 10px;
   border: solid #353535;
@@ -11236,7 +11412,7 @@ header {
   height: 74px;
 }
 header nav {
-  background-color: black;
+  background-color: #0f0f0f;
   text-transform: uppercase;
 }
 header nav img {
@@ -11250,7 +11426,8 @@ header nav img {
   padding: 0.5rem 1rem !important;
 }
 .nav-link:hover {
-  color: #8d7f42 !important;
+  color: #ad9e5b !important;
+  border-bottom: solid #ad9e5b 1px;
 }
 
 /* FOOTER */
@@ -11302,11 +11479,13 @@ footer {
   text-shadow: 1px 1px 1px black;
 }
 
+/* ---------- HERO ---------- */
 .hero {
   display: grid;
   justify-items: center;
   align-items: center;
   position: relative;
+  border-bottom: #4b4b4b solid 2px;
   line-height: 0;
   /* Sin el line height:0 la section excede el contenido del video */
 }
@@ -11329,7 +11508,7 @@ footer {
 }
 .hero__content__button {
   font-size: 1.2rem;
-  background-color: #8d7f42;
+  background-color: #ad9e5b;
   border: solid #0f0f0f;
   border-radius: 10px;
   padding: 0.5rem 2rem;
@@ -11339,7 +11518,7 @@ footer {
   border-color: #ebf2f0;
 }
 
-/* MEDIA QUERIES DISPOSITIVOS PEQUEÑOS*/
+/* ---------- MEDIA QUERIES DISPOSITIVOS PEQUEÑOS ---------- */
 @media (max-width: 576px) {
   .hero__content__title {
     font-size: 1.8rem;
@@ -11349,7 +11528,7 @@ footer {
     font-size: 1rem;
   }
 }
-/* ESTILO TYPEWRITING HERO */
+/* ---------- ESTILO TYPEWRITING HERO ---------- */
 @media (min-width: 1024px) {
   .typewriter h1, .typewriter .h1 {
     overflow: hidden;
@@ -11401,9 +11580,23 @@ footer {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* FORM de Contacto*/
+/* FORM de Contacto */
 .fondoClaro {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Button */
+.botonForm {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  background-color: #ad9e5b;
+  border: solid #0f0f0f;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+}
+.botonForm:hover {
+  color: #ebf2f0;
+  border-color: #ebf2f0;
 }
 
 /*# sourceMappingURL=styles.css.map */
