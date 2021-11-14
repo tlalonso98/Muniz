@@ -11176,19 +11176,23 @@ h3, .h3 {
 /* CONTENIDO */
 .homeContent {
   margin: 4rem auto;
-  background-color: rgba(196, 196, 196, 0.5);
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #353535;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px !important;
+  border-radius: 15px;
   padding: 2rem;
 }
 .homeContent__title {
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
 }
+.homeContent p {
+  font-size: 17px;
+}
 
 .fotoIndex {
   max-width: 100%;
+  border-radius: 15px;
+  border: #ad9e5b solid 2px;
 }
 
 .servicios {
@@ -11203,7 +11207,7 @@ h3, .h3 {
   background-color: rgba(0, 0, 0, 0.05);
   color: #ebf2f0;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px !important;
   font-size: 17px;
   overflow: hidden;
   position: relative;
