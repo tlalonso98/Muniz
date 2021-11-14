@@ -11174,7 +11174,7 @@ h3, .h3 {
 
 /* Pages */
 /* CONTENIDO */
-.homeContent {
+.homeContent, .homeForm {
   margin: 4rem auto;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px !important;
@@ -11185,8 +11185,8 @@ h3, .h3 {
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
 }
-.homeContent p {
-  font-size: 17px;
+.homeContent p, .homeForm p {
+  font-size: 18px;
 }
 
 .fotoIndex {
@@ -11200,6 +11200,7 @@ h3, .h3 {
 }
 .servicios img {
   height: 15rem;
+  max-width: 100%;
 }
 
 /* IMÁGENES CON EFECTO  */
@@ -11259,7 +11260,7 @@ h3, .h3 {
   right: 0px;
   z-index: 1;
   bottom: 0;
-  padding: 2rem 2rem 2rem 50%;
+  padding: 2rem 2rem 2rem 55%;
 }
 
 .efectoServicios figcaption:before,
@@ -11453,7 +11454,7 @@ footer {
 .autor {
   color: #ebf2f0;
   justify-items: center;
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: rgba(200, 200, 200, 0.05);
 }
 .autor__texto {
   margin: 0;
@@ -11468,7 +11469,6 @@ footer {
   justify-items: center;
   align-items: center;
   position: relative;
-  border-bottom: #4b4b4b solid 2px;
   line-height: 0;
   /* Sin el line height:0 la section excedía el contenido del video */
 }
@@ -11546,29 +11546,26 @@ footer {
     }
   }
 }
-.formulario textarea, .formulario input {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+/* FORMULARIO DE LA HOME */
+.homeForm {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.homeForm__title {
+  color: #ebf2f0;
+  margin-bottom: 1.5rem;
+}
+.homeForm img {
+  width: 70%;
 }
 
+.formulario input {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
 .formulario textarea {
+  background-color: rgba(0, 0, 0, 0.75) !important;
   height: 8rem !important;
 }
 
-.imgForm {
-  width: 50%;
-}
-
-/* FORM de Index*/
-.fondoOscuro {
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-/* FORM de Contacto */
-.fondoClaro {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-/* Button */
 .botonForm {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
@@ -11581,5 +11578,12 @@ footer {
   color: #ebf2f0;
   border-color: #ebf2f0;
 }
+
+/* FORMULARIO DE CONTACTO
+
+.fondoClaro {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+ */
 
 /*# sourceMappingURL=styles.css.map */
