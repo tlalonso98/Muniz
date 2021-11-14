@@ -11150,12 +11150,12 @@ a {
   border-radius: 20px;
 }
 
-/* H1 PARA TODO MENOS INDEX */
-.pageTitle {
+/* ---------- H1 (No en Hero) ---------- */
+h1, .h1 {
   color: #ebf2f0;
   font-family: "Raleway", sans-serif;
-  text-shadow: 2px 2px 4px black;
-  padding: 1rem;
+  text-shadow: 0px 0px 10px #0f0f0f;
+  margin: 2rem 0;
   letter-spacing: 0.1rem;
   text-align: center;
 }
@@ -11195,15 +11195,12 @@ h3, .h3 {
   border: #ad9e5b solid 2px;
 }
 
-.servicios {
-  padding: 3rem;
-}
-.servicios img {
+.efectoServicios img {
   height: 15rem;
-  max-width: 100%;
+  max-width: 80%;
 }
 
-/* IMÁGENES CON EFECTO  */
+/* EFECTO  */
 .efectoServicios {
   background-color: rgba(0, 0, 0, 0.05);
   color: #ebf2f0;
@@ -11213,6 +11210,8 @@ h3, .h3 {
   overflow: hidden;
   position: relative;
   text-align: right;
+  margin: 0;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
 }
 
 .efectoServicios *,
@@ -11287,18 +11286,18 @@ h3, .h3 {
   transform: skew(-30deg) translateX(90%);
 }
 
-.efectoServicios h3, .efectoServicios .h3,
+.efectoServicios h2, .efectoServicios .h2,
 .efectoServicios p {
   opacity: 0;
   letter-spacing: 1px;
 }
 
-.efectoServicios h3, .efectoServicios .h3 {
+.efectoServicios h2, .efectoServicios .h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  color: #4b4b4b;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.1em;
-  text-transform: uppercase;
 }
 
 .efectoServicios p {
@@ -11314,9 +11313,9 @@ h3, .h3 {
   z-index: 1;
 }
 
-.efectoServicios:hover h3, .efectoServicios:hover .h3,
-.efectoServicios.hover h3,
-.efectoServicios.hover .h3,
+.efectoServicios:hover h2, .efectoServicios:hover .h2,
+.efectoServicios.hover h2,
+.efectoServicios.hover .h2,
 .efectoServicios:hover p,
 .efectoServicios.hover p {
   -webkit-transform: translateY(0);
