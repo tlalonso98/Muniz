@@ -6,8 +6,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11122,12 +11120,11 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   list-style: none;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* ---------- PALETA DE COLORES ---------- */
@@ -11190,58 +11187,44 @@ h3, .h3 {
   font-family: "Raleway", sans-serif;
 }
 
-.fotoCarousel {
-  max-width: 100%;
-}
-
 .fotoIndex {
   max-width: 100%;
 }
 
 .servicios {
-  padding: 4rem;
+  padding: 3rem;
 }
-.servicios__img {
-  height: 20rem;
-  padding-bottom: 2rem;
-  align-items: center;
+.servicios img {
+  height: 15rem;
 }
 
-/* IMÄGENES CON EFECTO  */
-.snip1563 {
-  background-color: rgba(141, 141, 141, 0.527);
-  color: #ffffff;
-  border-radius: 40px;
-  box-shadow: black 2px 2px 20px;
-  display: inline-block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  margin: 10px 5px;
-  max-width: 630px;
-  min-width: 460px;
+/* IMÁGENES CON EFECTO  */
+.efectoServicios {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #ebf2f0;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
+  font-size: 17px;
   overflow: hidden;
   position: relative;
   text-align: right;
-  width: 100%;
 }
 
-.snip1563 *,
-.snip1563 *:before,
-.snip1563 *:after {
+.efectoServicios *,
+.efectoServicios *:before,
+.efectoServicios *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  transition: all 0.5s ease;
 }
 
-.snip1563 img {
+.efectoServicios img {
   backface-visibility: hidden;
-  max-width: 100%;
-  vertical-align: top;
 }
 
-.snip1563:before,
-.snip1563:after {
+.efectoServicios:before,
+.efectoServicios:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11250,21 +11233,21 @@ h3, .h3 {
   content: "";
   background-color: #ad9e5b;
   opacity: 0.5;
-  -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.snip1563:before {
+.efectoServicios:before {
   -webkit-transform: skew(30deg) translateX(80%);
   transform: skew(30deg) translateX(80%);
 }
 
-.snip1563:after {
+.efectoServicios:after {
   -webkit-transform: skew(-30deg) translateX(70%);
   transform: skew(-30deg) translateX(70%);
 }
 
-.snip1563 figcaption {
+.efectoServicios figcaption {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -11272,11 +11255,11 @@ h3, .h3 {
   right: 0px;
   z-index: 1;
   bottom: 0;
-  padding: 20px 20px 20px 40%;
+  padding: 2rem 2rem 2rem 50%;
 }
 
-.snip1563 figcaption:before,
-.snip1563 figcaption:after {
+.efectoServicios figcaption:before,
+.efectoServicios figcaption:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11289,36 +11272,35 @@ h3, .h3 {
   z-index: -1;
 }
 
-.snip1563 figcaption:before {
+.efectoServicios figcaption:before {
   -webkit-transform: skew(30deg) translateX(100%);
   transform: skew(30deg) translateX(100%);
 }
 
-.snip1563 figcaption:after {
+.efectoServicios figcaption:after {
   -webkit-transform: skew(-30deg) translateX(90%);
   transform: skew(-30deg) translateX(90%);
 }
 
-.snip1563 h3, .snip1563 .h3,
-.snip1563 p {
-  margin: 0;
+.efectoServicios h3, .efectoServicios .h3,
+.efectoServicios p {
   opacity: 0;
   letter-spacing: 1px;
 }
 
-.snip1563 h3, .snip1563 .h3 {
-  font-family: "Teko", sans-serif;
+.efectoServicios h3, .efectoServicios .h3 {
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1.1em;
   text-transform: uppercase;
 }
 
-.snip1563 p {
+.efectoServicios p {
   font-size: 0.9em;
 }
 
-.snip1563 a {
+.efectoServicios a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11327,40 +11309,40 @@ h3, .h3 {
   z-index: 1;
 }
 
-.snip1563:hover h3, .snip1563:hover .h3,
-.snip1563.hover h3,
-.snip1563.hover .h3,
-.snip1563:hover p,
-.snip1563.hover p {
+.efectoServicios:hover h3, .efectoServicios:hover .h3,
+.efectoServicios.hover h3,
+.efectoServicios.hover .h3,
+.efectoServicios:hover p,
+.efectoServicios.hover p {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 0.9;
 }
 
-.snip1563:hover:before,
-.snip1563.hover:before {
+.efectoServicios:hover:before,
+.efectoServicios.hover:before {
   -webkit-transform: skew(30deg) translateX(30%);
   transform: skew(30deg) translateX(30%);
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-.snip1563:hover:after,
-.snip1563.hover:after {
+.efectoServicios:hover:after,
+.efectoServicios.hover:after {
   -webkit-transform: skew(-30deg) translateX(20%);
   transform: skew(-30deg) translateX(20%);
 }
 
-.snip1563:hover figcaption:before,
-.snip1563.hover figcaption:before {
+.efectoServicios:hover figcaption:before,
+.efectoServicios.hover figcaption:before {
   -webkit-transform: skew(30deg) translateX(50%);
   transform: skew(30deg) translateX(50%);
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
 
-.snip1563:hover figcaption:after,
-.snip1563.hover figcaption:after {
+.efectoServicios:hover figcaption:after,
+.efectoServicios.hover figcaption:after {
   -webkit-transform: skew(-30deg) translateX(40%);
   transform: skew(-30deg) translateX(40%);
   -webkit-transition-delay: 0.1s;
@@ -11375,6 +11357,10 @@ h3, .h3 {
 .carouselStyle:hover {
   filter: grayscale(0);
   transition: filter 0.6s ease-out;
+}
+
+.fotoCarousel {
+  max-width: 100%;
 }
 
 .equipo img {
@@ -11430,22 +11416,19 @@ header nav img {
   border-bottom: solid #ad9e5b 1px;
 }
 
-/* FOOTER */
 footer {
-  background-image: url(../images/footerbackground.jpg);
+  background-image: url(../../images/generales/footerbackground.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 -4px 10px 0 black;
-  z-index: 10;
+  box-shadow: 0 -4px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .redSocial {
   color: #b6b6b6;
 }
 .redSocial i {
-  padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .redSocial--ig:hover {
@@ -11453,30 +11436,26 @@ footer {
   text-shadow: 3px 3px 5px black;
 }
 
-/*Creamos el bucle para usar los valores del mapa*/
 .redSocial--fb:hover {
   color: #3b5998;
   text-shadow: 3px 3px 5px black;
 }
 
-/*Creamos el bucle para usar los valores del mapa*/
 .redSocial--li:hover {
   color: #0e76a8;
   text-shadow: 3px 3px 5px black;
 }
 
-/*Creamos el bucle para usar los valores del mapa*/
 .autor {
   color: #ebf2f0;
   justify-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(200, 200, 200, 0.1);
 }
 .autor__texto {
   margin: 0;
   font-size: 0.8rem;
   overflow: hidden;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* ---------- HERO ---------- */
@@ -11487,7 +11466,7 @@ footer {
   position: relative;
   border-bottom: #4b4b4b solid 2px;
   line-height: 0;
-  /* Sin el line height:0 la section excede el contenido del video */
+  /* Sin el line height:0 la section excedía el contenido del video */
 }
 .hero__video {
   padding: 0;
