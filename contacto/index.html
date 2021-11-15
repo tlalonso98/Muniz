@@ -30,9 +30,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <!--------------------AOS-------------------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!--Raleway-->
+    <!--------------------RALEWAY-------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +42,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
-  <body>
+  <body class="background">
     <!--HEADER-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark shadow fixed-top">
@@ -75,25 +73,16 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../servicios/index.html"
-                  >Servicios</a
-                >
+                <a class="nav-link" href="../servicios/index.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../proyectos/index.html"
-                  >Proyectos</a
-                >
+                <a class="nav-link" href="../proyectos/index.html">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../nosotros/index.html"
-                  >Nosotros</a
-                >
+                <a class="nav-link" href="../nosotros/index.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >Contacto</a
                 >
               </li>
@@ -103,86 +92,89 @@
       </nav>
     </header>
     <!--CONTENIDO-->
-    <main class="background">
-      <!--FORMULARIO-->
-      <div class="fondoClaro">
-        <section
-          class="
-            container
-            row
-            text-center
-            align-items-center
-            justify-content-center
-            py-4
-            m-auto
-          "
-        >
-          <div class="align-middle col-12 col-xl-7">
-            <h1 class="pageTitle px-4">Consultá o contanos tu proyecto</h2>
-            <img
-              src="images/contactoimg.png"
-              alt="Ilustración de una construcción"
-              class="imgForm py-4 d-none d-xl-inline-block opacity-75"
-            />
+    <main>
+      <!-- FORMULARIO -->
+      <section class="container">
+        <div class="shadow formularioContacto">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-xl-6 px-4">
+              <h1>Consultá o contanos tu proyecto</h1>
+              <img
+                src="../images/contactoimg.svg"
+                alt="Ilustración de una construcción"
+                class="py-4 d-none d-xl-flex opacity-75 m-auto"
+              />
+            </div>
+            <div class="formulario text-white col-12 col-xl-6">
+              <div class="w-75 m-auto">
+                <form
+                  action="https://formsubmit.co/tl.alonso98@gmail.com"
+                  method="POST"
+                >
+                  <div class="form-floating mb-4">
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-white"
+                      id="floatingInput"
+                      placeholder="Nombre"
+                      required
+                    />
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="email"
+                      class="form-control bg-dark text-white"
+                      id="floatingInput"
+                      placeholder="Correo electrónico"
+                      required
+                    />
+                    <label for="floatingInput">Correo electrónico</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-white"
+                      id="floatingInput"
+                      placeholder="Teléfono"
+                      required
+                    />
+                    <label for="floatingInput">Teléfono</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <textarea
+                      tipy="text"
+                      class="form-control bg-dark text-white"
+                      id="floatingInput"
+                      placeholder="¿En qué podemos ayudarte?"
+                      required
+                    ></textarea>
+                    <label for="floatingInput">¿En qué podemos ayudarte?</label>
+                  </div>
+                  <button type="submit" class="w-100 btn px-5 shadow botonForm">
+                    Enviar
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="formulario text-white col-10 col-xl-5">
-            <div class="form-floating mb-4">
-              <input
-                type="text"
-                class="form-control bg-dark text-white"
-                id="floatingInput"
-                placeholder="Nombre"
-              />
-              <label for="floatingInput">Nombre</label>
-            </div>
-            <div class="form-floating mb-4">
-              <input
-                type="email"
-                class="form-control bg-dark text-white"
-                id="floatingInput"
-                placeholder="Correo electrónico"
-              />
-              <label for="floatingInput">Correo electrónico</label>
-            </div>
-            <div class="form-floating mb-4">
-              <input
-                type="text"
-                class="form-control bg-dark text-white"
-                id="floatingInput"
-                placeholder="Teléfono"
-              />
-              <label for="floatingInput">Teléfono</label>
-            </div>
-            <div class="form-floating mb-4">
-              <textarea
-                tipy="text"
-                class="form-control bg-dark text-white"
-                id="floatingInput"
-                placeholder="¿En qué podemos ayudarte?"
-              ></textarea>
-              <label for="floatingInput">¿En qué podemos ayudarte?</label>
-            </div>
-            <button type="submit" class="btn btn-dark px-5 shadow border-white">
-              Enviar
-            </button>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--TARJETAS-->
       <section class="container-lg d-flex text-center my-4 tarjetas">
         <div class="tarjetas__card py-3">
-          <img src="./images/icons/location.svg" alt="Ícono de ubicacion" />
+          <img src="../images/icons/location.svg" alt="Ícono de ubicacion" />
           <h2 class="pt-2">Estudio</h2>
           <h3>Lorem Ipsum 1998, Haedo</h3>
         </div>
         <div class="tarjetas__card py-3">
-          <img src="./images/icons/phone.svg" alt="Ícono de telefono" />
+          <img src="../images/icons/phone.svg" alt="Ícono de telefono" />
           <h2 class="pt-2">Teléfono</h2>
           <h3>(011) 4443-1234</h3>
         </div>
         <div class="tarjetas__card py-3">
           <img
-            src="./images/icons/mail.svg"
+            src="../images/icons/mail.svg"
             alt="Ícono de correo electrónico"
           />
           <h2 class="pt-2">E-mail</h2>
@@ -190,8 +182,8 @@
         </div>
       </section>
       <!--MAPA-->
-      <section class="text-center container-fluid">
-        <h2>¿Dónde nos encontramos?</h2>
+      <section class="text-center container mb-4">
+        <h2 class="pb-3">¿Dónde nos encontramos?</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52517.36824030893!2d-58.63465350613662!3d-34.64622873280601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78273397ab1%3A0x5093683b11b0c457!2sHaedo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630787333026!5m2!1ses-419!2sar"
           width="600"
@@ -199,7 +191,7 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          class="py-4 w-75 rounded mapaGris"
+          class="w-100 mapaGris"
         >
           Este mapa no es compatible con su navegador.
         </iframe>

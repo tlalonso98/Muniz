@@ -11150,7 +11150,7 @@ a {
   border-radius: 20px;
 }
 
-/* ---------- H1 (No en Hero) ---------- */
+/* ---------- H1 (EL DE HERO ES DISTINTO) ---------- */
 h1, .h1 {
   color: #ebf2f0;
   font-family: "Raleway", sans-serif;
@@ -11160,21 +11160,20 @@ h1, .h1 {
   text-align: center;
 }
 
-/* H2 GENERALES */
+/* ---------- H2 ---------- */
 h2, .h2 {
   font-family: "Raleway", sans-serif;
 }
 
-/* H3 GENERALES */
+/* ---------- H3 ---------- */
 h3, .h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
   color: #4b4b4b;
+  font-size: 18px;
 }
 
 /* Pages */
 /* CONTENIDO */
-.homeContent, .homeForm {
+.homeContent, .formularioContacto {
   margin: 4rem auto;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px !important;
@@ -11184,8 +11183,9 @@ h3, .h3 {
 .homeContent__title {
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
+  text-shadow: 0px 0px 1px #4b4b4b;
 }
-.homeContent p, .homeForm p {
+.homeContent p, .formularioContacto p {
   font-size: 18px;
 }
 
@@ -11354,21 +11354,35 @@ h3, .h3 {
 }
 
 .carouselStyle {
-  border-radius: 10px;
-  border: solid #353535;
-  filter: grayscale(50%);
+  border-radius: 15px;
+  border: solid #4b4b4b;
+  filter: grayscale(15%);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px;
 }
 .carouselStyle:hover {
   filter: grayscale(0);
   transition: filter 0.6s ease-out;
 }
 
-.fotoCarousel {
+.carousel-item img {
   max-width: 100%;
+  border-radius: 15px;
 }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.equipo {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px;
+  border-radius: 15px;
+}
 .equipo img {
   filter: grayscale(100%);
+  max-width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;
 }
 
 /* TARJETAS */
@@ -11395,6 +11409,8 @@ h3, .h3 {
 /* MAPA */
 .mapaGris {
   filter: grayscale(100%);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 5px;
 }
 
 /* Componentes */
@@ -11484,8 +11500,6 @@ footer {
 }
 .hero__content__title {
   font-size: 2.7rem;
-  color: #ebf2f0;
-  text-shadow: 2px 2px 2px black;
   letter-spacing: 0.2rem;
 }
 .hero__content__button {
@@ -11546,14 +11560,15 @@ footer {
   }
 }
 /* FORMULARIO DE LA HOME */
-.homeForm {
+.formularioContacto {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.homeForm__title {
+.formularioContacto__title {
   color: #ebf2f0;
   margin-bottom: 1.5rem;
+  text-shadow: 0px 0px 3px #0f0f0f;
 }
-.homeForm img {
+.formularioContacto img {
   width: 70%;
 }
 
@@ -11577,12 +11592,5 @@ footer {
   color: #ebf2f0;
   border-color: #ebf2f0;
 }
-
-/* FORMULARIO DE CONTACTO
-
-.fondoClaro {
-  background-color: rgba(0, 0, 0, 0.25);
-}
- */
 
 /*# sourceMappingURL=styles.css.map */
