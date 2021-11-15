@@ -11411,7 +11411,7 @@ h3, .h3 {
 
 /* MAPA */
 .mapaGris {
-  filter: grayscale(100%);
+  filter: grayscale(50%);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 5px;
 }
@@ -11574,6 +11574,21 @@ footer {
 }
 .formularioCaja img {
   width: 70%;
+  animation: translate 2s infinite linear;
+}
+@keyframes translate {
+  0% {
+    transform: translate(-250px);
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: translate(25px);
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: translate(-250px);
+    transform: rotate(-10deg);
+  }
 }
 
 .formulario input {
