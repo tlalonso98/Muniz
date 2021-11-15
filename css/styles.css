@@ -11173,7 +11173,7 @@ h3, .h3 {
 
 /* Pages */
 /* CONTENIDO */
-.homeContent, .formularioContacto {
+.homeContent, .formularioCaja {
   margin: 4rem auto;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px !important;
@@ -11185,7 +11185,7 @@ h3, .h3 {
   font-family: "Raleway", sans-serif;
   text-shadow: 0px 0px 1px #4b4b4b;
 }
-.homeContent p, .formularioContacto p {
+.homeContent p, .formularioCaja p {
   font-size: 18px;
 }
 
@@ -11259,7 +11259,7 @@ h3, .h3 {
   right: 0px;
   z-index: 1;
   bottom: 0;
-  padding: 2rem 2rem 2rem 55%;
+  padding: 2rem 2rem 2rem 40%;
 }
 
 .efectoServicios figcaption:before,
@@ -11381,6 +11381,7 @@ h3, .h3 {
 }
 .equipo img {
   filter: grayscale(100%);
+  width: 75%;
   max-width: 200px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px;
 }
@@ -11470,6 +11471,7 @@ footer {
   color: #ebf2f0;
   justify-items: center;
   background-color: rgba(200, 200, 200, 0.05);
+  padding: 1rem 0;
 }
 .autor__texto {
   margin: 0;
@@ -11560,15 +11562,15 @@ footer {
   }
 }
 /* FORMULARIO DE LA HOME */
-.formularioContacto {
+.formularioCaja {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.formularioContacto__title {
+.formularioCaja__title {
   color: #ebf2f0;
   margin-bottom: 1.5rem;
   text-shadow: 0px 0px 3px #0f0f0f;
 }
-.formularioContacto img {
+.formularioCaja img {
   width: 70%;
 }
 
