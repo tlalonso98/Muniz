@@ -11131,9 +11131,11 @@ a {
 /* ---------- FUENTES ---------- */
 /* ---------- FONDO ---------- */
 .background {
-  background-position: center;
-  background-size: cover;
   background-image: linear-gradient(to bottom, rgba(25, 25, 25, 0.5), rgba(50, 50, 50, 0.35), rgba(100, 100, 100, 0.2), rgba(200, 200, 200, 0)), url(../images/generales/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 /* ---------- BARRA DE SCROLL ---------- */
