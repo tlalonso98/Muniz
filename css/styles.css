@@ -11392,12 +11392,12 @@ h3, .h3 {
   justify-content: space-evenly;
 }
 .tarjetas__card {
-  border: solid black 2px;
+  border: solid #4b4b4b 2px;
   border-radius: 5px;
   margin: 1rem;
   padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 5px;
   min-width: 350px;
 }
 .tarjetas__card:hover {
